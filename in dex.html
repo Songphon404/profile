@@ -1,2 +1,152 @@
-นายทรงพล สมตน
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรไฟล์ - ทรงพล สมตน</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 450px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .avatar-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 4px solid #007bff;
+            overflow: hidden;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .avatar-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* รูป Placeholder กรณีที่อินเทอร์เน็ตหลุดหรือรูปโหลดไม่ได้ */
+        .avatar-placeholder {
+            font-size: 50px;
+            color: #adb5bd;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .nickname {
+            font-size: 16px;
+            color: #007bff;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .info-section {
+            text-align: left;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 12px;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #7f8c8d;
+            display: inline-block;
+            width: 100px;
+        }
+
+        .info-value {
+            color: #34495e;
+        }
+
+        .tag {
+            background-color: #e3f2fd;
+            color: #0d47a1;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="avatar-container">
+            <img src="https://cultural-bronze-xowffw7h.edgeone.dev/MEITU_20251003_221104597.jpg" alt="รูปโปรไฟล์ของ เจ๊ก" onerror="this.style.display='none'; document.getElementById('placeholder').style.display='block';">
+            <div id="placeholder" class="avatar-placeholder" style="display: none;">👤</div>
+        </div>
+
+        <h1>นายทรงพล สมตน</h1>
+        <div class="nickname">ชื่อเล่น: เจ๊ก</div>
+
+        <div class="info-section">
+            <div class="info-item">
+                <span class="info-label">รหัสนักศึกษา:</span>
+                <span class="info-value tag">694245004</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">สาขาวิชา:</span>
+                <span class="info-value">วิทยาการคอมพิวเตอร์</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">คณะ:</span>
+                <span class="info-value">วิทยาศาสตร์และเทคโนโลยี</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">สถาบัน:</span>
+                <span class="info-value">มหาวิทยาลัยราชภัฏหมู่บ้านจอมบึง</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">เบอร์โทร:</span>
+                <span class="info-value"><a href="tel:0838594209" style="color: inherit; text-decoration: none;">083-8594209</a></span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">อีเมล:</span>
+                <span class="info-value"><a href="mailto:smtnthrngphl@gmail.com" style="color: #007bff; text-decoration: none;">smtnthrngphl@gmail.com</a></span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
 
