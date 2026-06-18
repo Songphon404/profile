@@ -30,11 +30,12 @@
             max-width: 450px;
             padding: 30px;
             text-align: center;
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .profile-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
         }
 
         .avatar-container {
@@ -56,7 +57,6 @@
             object-fit: cover;
         }
 
-        /* รูป Placeholder กรณีที่อินเทอร์เน็ตหลุดหรือรูปโหลดไม่ได้ */
         .avatar-placeholder {
             font-size: 50px;
             color: #adb5bd;
@@ -72,39 +72,55 @@
             font-size: 16px;
             color: #007bff;
             font-weight: 600;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .info-section {
-            text-align: left;
             border-top: 1px solid #eee;
             padding-top: 20px;
         }
 
         .info-item {
-            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 14px;
             font-size: 15px;
             line-height: 1.5;
+            text-align: left;
         }
 
         .info-label {
             font-weight: bold;
             color: #7f8c8d;
-            display: inline-block;
-            width: 100px;
+            width: 110px;
+            flex-shrink: 0;
         }
 
         .info-value {
             color: #34495e;
+            flex-grow: 1;
+            word-break: break-word;
         }
 
         .tag {
+            display: inline-block;
             background-color: #e3f2fd;
             color: #0d47a1;
-            padding: 4px 8px;
+            padding: 2px 8px;
             border-radius: 4px;
             font-size: 13px;
             font-weight: bold;
+        }
+
+        .info-value a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .info-value a:hover {
+            color: #007bff;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -112,6 +128,7 @@
 
     <div class="profile-card">
         <div class="avatar-container">
+            <!-- ใส่ลิงก์รูปภาพของคุณเจ๊กให้เรียบร้อยแล้วตรงนี้ครับ -->
             <img src="https://cultural-bronze-xowffw7h.edgeone.dev/MEITU_20251003_221104597.jpg" alt="รูปโปรไฟล์ของ เจ๊ก" onerror="this.style.display='none'; document.getElementById('placeholder').style.display='block';">
             <div id="placeholder" class="avatar-placeholder" style="display: none;">👤</div>
         </div>
@@ -122,7 +139,7 @@
         <div class="info-section">
             <div class="info-item">
                 <span class="info-label">รหัสนักศึกษา:</span>
-                <span class="info-value tag">694245004</span>
+                <span class="info-value"><span class="tag">694245004</span></span>
             </div>
             <div class="info-item">
                 <span class="info-label">สาขาวิชา:</span>
@@ -138,15 +155,14 @@
             </div>
             <div class="info-item">
                 <span class="info-label">เบอร์โทร:</span>
-                <span class="info-value"><a href="tel:0838594209" style="color: inherit; text-decoration: none;">083-8594209</a></span>
+                <span class="info-value"><a href="tel:0838594209">083-8594209</a></span>
             </div>
             <div class="info-item">
                 <span class="info-label">อีเมล:</span>
-                <span class="info-value"><a href="mailto:smtnthrngphl@gmail.com" style="color: #007bff; text-decoration: none;">smtnthrngphl@gmail.com</a></span>
+                <span class="info-value"><a href="mailto:smtnthrngphl@gmail.com" style="color: #007bff;">smtnthrngphl@gmail.com</a></span>
             </div>
         </div>
     </div>
 
 </body>
 </html>
-
